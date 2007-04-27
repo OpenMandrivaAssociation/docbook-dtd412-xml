@@ -1,9 +1,13 @@
 %define dtdver 4.1.2
 %define mltyp xml
 
-Name:    docbook-dtd412-xml
-Version: 1.0
-Release: 18mdk
+%define name docbook-dtd412-xml
+%define version 1.0
+%define release %mkrel 19
+
+Name:    %{name}
+Version: %{version}
+Release: %{release}
 Group  : Publishing
 
 Summary: XML document type definition for DocBook %{dtdver}
@@ -12,9 +16,9 @@ License: Artistic style
 URL    : http://www.oasis-open.org/docbook/
 
 Provides: docbook-dtd-%{mltyp}
-Requires(pre): coreutils
-Requires(pre): sgml-common >= 0.6.3-2mdk
-Requires(pre):	libxml2-utils
+Requires: coreutils
+Requires: sgml-common >= 0.6.3-2mdk
+Requires: libxml2-utils
 
 BuildRoot: %_tmppath/%name-buildroot
 
@@ -28,23 +32,23 @@ BuildArch: noarch
 
 %define sgmlbase %{_datadir}/sgml
 
-%Description
+%description
 The DocBook Document Type Definition (DTD) describes the syntax of
 technical documentation texts (articles, books and manual pages).
 This syntax is XML-compliant and is developed by the OASIS consortium.
 This is the version %{dtdver} of this DTD.
 
 
-%Prep
+%prep
 %setup -q
 %setup -D -a 1 -q
 %patch0 -p1
 %patch1 -p1
 
-%Build
+%build
 
 
-%Install
+%install
 rm -rf $RPM_BUILD_ROOT
 DESTDIR=$RPM_BUILD_ROOT%{sgmlbase}/docbook/%{mltyp}-dtd-%{dtdver}
 mkdir -p $DESTDIR
@@ -68,7 +72,7 @@ touch $RPM_BUILD_ROOT%{_sysconfdir}/sgml/%{mltyp}-docbook-%{dtdver}.cat
 rm -rf $RPM_BUILD_ROOT
 
 
-%Files
+%files
 %defattr (-,root,root)
 %doc *.txt ChangeLog
 %dir %{sgmlbase}/docbook/%{mltyp}-dtd-%{dtdver}
