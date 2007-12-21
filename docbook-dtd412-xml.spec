@@ -20,6 +20,7 @@ Requires: coreutils
 Requires: sgml-common >= 0.6.3-2mdk
 Requires: libxml2-utils
 
+BuildRoot: %_tmppath/%name-buildroot
 
 # Zip file downloadable at http://www.oasis-open.org/docbook/%{mltyp}/%{dtdver}
 Source0  : docbkx412.tar.bz2 
