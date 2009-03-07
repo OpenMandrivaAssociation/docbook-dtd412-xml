@@ -3,7 +3,7 @@
 
 %define name docbook-dtd412-xml
 %define version 1.0
-%define release %mkrel 22
+%define release %mkrel 23
 
 Name:    %{name}
 Version: %{version}
