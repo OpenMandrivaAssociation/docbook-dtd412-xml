@@ -49,8 +49,8 @@ This is the version %{dtdver} of this DTD.
 
 
 %install
-rm -rf $RPM_BUILD_ROOT
-DESTDIR=$RPM_BUILD_ROOT%{sgmlbase}/docbook/%{mltyp}-dtd-%{dtdver}
+rm -rf %{buildroot}
+DESTDIR=%{buildroot}%{sgmlbase}/docbook/%{mltyp}-dtd-%{dtdver}
 mkdir -p $DESTDIR
 install -m644 docbook.cat $DESTDIR/catalog
 install -m644 xmlcatalog $DESTDIR
@@ -58,18 +58,18 @@ install -m644 *.dtd $DESTDIR
 install -m644 *.mod $DESTDIR
 
 # Symlinks
-mkdir -p $RPM_BUILD_ROOT%{_sysconfdir}/sgml
+mkdir -p %{buildroot}%{_sysconfdir}/sgml
 ln -s %{mltyp}-docbook-%{dtdver}.cat \
-	$RPM_BUILD_ROOT%{_sysconfdir}/sgml/%{mltyp}-docbook.cat
+	%{buildroot}%{_sysconfdir}/sgml/%{mltyp}-docbook.cat
 
-mkdir -p $RPM_BUILD_ROOT%{_sysconfdir}/sgml
-touch $RPM_BUILD_ROOT%{_sysconfdir}/sgml/%{mltyp}-docbook-%{dtdver}.cat
+mkdir -p %{buildroot}%{_sysconfdir}/sgml
+touch %{buildroot}%{_sysconfdir}/sgml/%{mltyp}-docbook-%{dtdver}.cat
 # What's that for?
-# touch $RPM_BUILD_ROOT%{_sysconfdir}/sgml/catalog
+# touch %{buildroot}%{_sysconfdir}/sgml/catalog
 
 
 %clean
-rm -rf $RPM_BUILD_ROOT
+rm -rf %{buildroot}
 
 
 %files
