@@ -1,0 +1,173 @@
+--- orig/dbcentx.mod	Fri May 25 19:13:44 2001
++++ dbcentx.mod	Fri May 25 19:20:36 2001
+@@ -52,7 +52,7 @@
+ <![%ISOamsa.module;[
+ <!ENTITY % ISOamsa PUBLIC
+ "ISO 8879:1986//ENTITIES Added Math Symbols: Arrow Relations//EN//XML"
+-"ent/iso-amsa.ent">
++"/usr/share/sgml/xml-iso-entities-8879.1986/iso-amsa.ent">
+ %ISOamsa;
+ <!--end of ISOamsa.module-->]]>
+ 
+@@ -60,7 +60,7 @@
+ <![%ISOamsb.module;[
+ <!ENTITY % ISOamsb PUBLIC
+ "ISO 8879:1986//ENTITIES Added Math Symbols: Binary Operators//EN//XML"
+-"ent/iso-amsb.ent">
++"/usr/share/sgml/xml-iso-entities-8879.1986/iso-amsb.ent">
+ %ISOamsb;
+ <!--end of ISOamsb.module-->]]>
+ 
+@@ -68,7 +68,7 @@
+ <![%ISOamsc.module;[
+ <!ENTITY % ISOamsc PUBLIC
+ "ISO 8879:1986//ENTITIES Added Math Symbols: Delimiters//EN//XML"
+-"ent/iso-amsc.ent">
++"/usr/share/sgml/xml-iso-entities-8879.1986/iso-amsc.ent">
+ %ISOamsc;
+ <!--end of ISOamsc.module-->]]>
+ 
+@@ -76,7 +76,7 @@
+ <![%ISOamsn.module;[
+ <!ENTITY % ISOamsn PUBLIC
+ "ISO 8879:1986//ENTITIES Added Math Symbols: Negated Relations//EN//XML"
+-"ent/iso-amsn.ent">
++"/usr/share/sgml/xml-iso-entities-8879.1986/iso-amsn.ent">
+ %ISOamsn;
+ <!--end of ISOamsn.module-->]]>
+ 
+@@ -84,7 +84,7 @@
+ <![%ISOamso.module;[
+ <!ENTITY % ISOamso PUBLIC
+ "ISO 8879:1986//ENTITIES Added Math Symbols: Ordinary//EN//XML"
+-"ent/iso-amso.ent">
++"/usr/share/sgml/xml-iso-entities-8879.1986/iso-amso.ent">
+ %ISOamso;
+ <!--end of ISOamso.module-->]]>
+ 
+@@ -92,7 +92,7 @@
+ <![%ISOamsr.module;[
+ <!ENTITY % ISOamsr PUBLIC
+ "ISO 8879:1986//ENTITIES Added Math Symbols: Relations//EN//XML"
+-"ent/iso-amsr.ent">
++"/usr/share/sgml/xml-iso-entities-8879.1986/iso-amsr.ent">
+ %ISOamsr;
+ <!--end of ISOamsr.module-->]]>
+ 
+@@ -100,7 +100,7 @@
+ <![%ISObox.module;[
+ <!ENTITY % ISObox PUBLIC
+ "ISO 8879:1986//ENTITIES Box and Line Drawing//EN//XML"
+-"ent/iso-box.ent">
++"/usr/share/sgml/xml-iso-entities-8879.1986/iso-box.ent">
+ %ISObox;
+ <!--end of ISObox.module-->]]>
+ 
+@@ -108,7 +108,7 @@
+ <![%ISOcyr1.module;[
+ <!ENTITY % ISOcyr1 PUBLIC
+ "ISO 8879:1986//ENTITIES Russian Cyrillic//EN//XML"
+-"ent/iso-cyr1.ent">
++"/usr/share/sgml/xml-iso-entities-8879.1986/iso-cyr1.ent">
+ %ISOcyr1;
+ <!--end of ISOcyr1.module-->]]>
+ 
+@@ -116,7 +116,7 @@
+ <![%ISOcyr2.module;[
+ <!ENTITY % ISOcyr2 PUBLIC
+ "ISO 8879:1986//ENTITIES Non-Russian Cyrillic//EN//XML"
+-"ent/iso-cyr2.ent">
++"/usr/share/sgml/xml-iso-entities-8879.1986/iso-cyr2.ent">
+ %ISOcyr2;
+ <!--end of ISOcyr2.module-->]]>
+ 
+@@ -124,7 +124,7 @@
+ <![%ISOdia.module;[
+ <!ENTITY % ISOdia PUBLIC
+ "ISO 8879:1986//ENTITIES Diacritical Marks//EN//XML"
+-"ent/iso-dia.ent">
++"/usr/share/sgml/xml-iso-entities-8879.1986/iso-dia.ent">
+ %ISOdia;
+ <!--end of ISOdia.module-->]]>
+ 
+@@ -132,7 +132,7 @@
+ <![%ISOgrk1.module;[
+ <!ENTITY % ISOgrk1 PUBLIC
+ "ISO 8879:1986//ENTITIES Greek Letters//EN//XML"
+-"ent/iso-grk1.ent">
++"/usr/share/sgml/xml-iso-entities-8879.1986/iso-grk1.ent">
+ %ISOgrk1;
+ <!--end of ISOgrk1.module-->]]>
+ 
+@@ -140,7 +140,7 @@
+ <![%ISOgrk2.module;[
+ <!ENTITY % ISOgrk2 PUBLIC
+ "ISO 8879:1986//ENTITIES Monotoniko Greek//EN//XML"
+-"ent/iso-grk2.ent">
++"/usr/share/sgml/xml-iso-entities-8879.1986/iso-grk2.ent">
+ %ISOgrk2;
+ <!--end of ISOgrk2.module-->]]>
+ 
+@@ -148,7 +148,7 @@
+ <![%ISOgrk3.module;[
+ <!ENTITY % ISOgrk3 PUBLIC
+ "ISO 8879:1986//ENTITIES Greek Symbols//EN//XML"
+-"ent/iso-grk3.ent">
++"/usr/share/sgml/xml-iso-entities-8879.1986/iso-grk3.ent">
+ %ISOgrk3;
+ <!--end of ISOgrk3.module-->]]>
+ 
+@@ -156,7 +156,7 @@
+ <![%ISOgrk4.module;[
+ <!ENTITY % ISOgrk4 PUBLIC
+ "ISO 8879:1986//ENTITIES Alternative Greek Symbols//EN//XML"
+-"ent/iso-grk4.ent">
++"/usr/share/sgml/xml-iso-entities-8879.1986/iso-grk4.ent">
+ %ISOgrk4;
+ <!--end of ISOgrk4.module-->]]>
+ 
+@@ -164,7 +164,7 @@
+ <![%ISOlat1.module;[
+ <!ENTITY % ISOlat1 PUBLIC
+ "ISO 8879:1986//ENTITIES Added Latin 1//EN//XML"
+-"ent/iso-lat1.ent">
++"/usr/share/sgml/xml-iso-entities-8879.1986/iso-lat1.ent">
+ %ISOlat1;
+ <!--end of ISOlat1.module-->]]>
+ 
+@@ -172,7 +172,7 @@
+ <![%ISOlat2.module;[
+ <!ENTITY % ISOlat2 PUBLIC
+ "ISO 8879:1986//ENTITIES Added Latin 2//EN//XML"
+-"ent/iso-lat2.ent">
++"/usr/share/sgml/xml-iso-entities-8879.1986/iso-lat2.ent">
+ %ISOlat2;
+ <!--end of ISOlat2.module-->]]>
+ 
+@@ -180,7 +180,7 @@
+ <![%ISOnum.module;[
+ <!ENTITY % ISOnum PUBLIC
+ "ISO 8879:1986//ENTITIES Numeric and Special Graphic//EN//XML"
+-"ent/iso-num.ent">
++"/usr/share/sgml/xml-iso-entities-8879.1986/iso-num.ent">
+ %ISOnum;
+ <!--end of ISOnum.module-->]]>
+ 
+@@ -188,7 +188,7 @@
+ <![%ISOpub.module;[
+ <!ENTITY % ISOpub PUBLIC
+ "ISO 8879:1986//ENTITIES Publishing//EN//XML"
+-"ent/iso-pub.ent">
++"/usr/share/sgml/xml-iso-entities-8879.1986/iso-pub.ent">
+ %ISOpub;
+ <!--end of ISOpub.module-->]]>
+ 
+@@ -196,7 +196,7 @@
+ <![%ISOtech.module;[
+ <!ENTITY % ISOtech PUBLIC
+ "ISO 8879:1986//ENTITIES General Technical//EN//XML"
+-"ent/iso-tech.ent">
++"/usr/share/sgml/xml-iso-entities-8879.1986/iso-tech.ent">
+ %ISOtech;
+ <!--end of ISOtech.module-->]]>
+ 
