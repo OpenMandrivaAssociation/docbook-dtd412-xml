@@ -5,7 +5,7 @@
 Summary:	XML document type definition for DocBook %{dtdver}
 Name:		docbook-dtd412-xml
 Version:	1.0
-Release:	34
+Release:	35
 Group:		Publishing
 License:	Artistic style
 Url:		http://www.oasis-open.org/docbook/
@@ -19,7 +19,7 @@ BuildArch:	noarch
 Provides:	docbook-dtd-%{mltyp}
 Requires:	coreutils
 Requires:	sgml-common
-Requires:	libxml2-utils
+Requires(pre):	libxml2-utils
 
 %description
 The DocBook Document Type Definition (DTD) describes the syntax of
