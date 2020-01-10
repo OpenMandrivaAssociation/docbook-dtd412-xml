@@ -31,7 +31,7 @@ This is the version %{dtdver} of this DTD.
 %prep
 %setup -q
 %setup -D -a 1 -q
-%apply_patches
+%autopatch -p1
 
 %build
 
