@@ -8,7 +8,7 @@ Version:	1.0
 Release:	43
 Group:		Publishing
 License:	Artistic style
-Url:		http://www.oasis-open.org/docbook/
+Url:		https://www.oasis-open.org/docbook/
 # Zip file downloadable at http://www.oasis-open.org/docbook/%{mltyp}/%{dtdver}
 Source0:	docbkx412.tar.bz2 
 Source1:	docbook-dtd412-xml-catalog.tar.bz2
